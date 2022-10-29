@@ -2,18 +2,18 @@
   position: absolute;
   height: 92px;
   width: 423px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
+  left: 0;
+  top: 0;
+  border-radius: 0;
   background: #3c3a39;
 }
 
 .first-Nav {
   height: 44px;
   width: 375px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
+  left: 0;
+  top: 0;
+  border-radius: 0;
   position: absolute;
 }
 
