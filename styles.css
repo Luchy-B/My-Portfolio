@@ -116,7 +116,7 @@
   order: 0;
   flex-grow: 0;
   margin-top: 1px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
 }
 
 .introHeader {
@@ -128,7 +128,7 @@
   letter-spacing: 0;
   text-align: left;
   font-style: normal;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -150,7 +150,7 @@
   letter-spacing: 0;
   text-align: left;
   font-style: normal;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
