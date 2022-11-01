@@ -75,9 +75,6 @@
 
 /* properties for Main */
 .main {
-  /* height: 590px;
-  width: 375px; */
-
   left: 0;
   top: 92px;
   border-radius: 0;
@@ -363,8 +360,10 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   border: none;
+  color: #fff;
 }
 
+/*
 a,
 .html,
 .bootstrap,
@@ -376,7 +375,7 @@ a,
 .btnSeeProject a {
   color: #fff;
   text-decoration: none;
-}
+} */
 
 .language {
   height: 40px;
@@ -563,9 +562,13 @@ a,
   left: 0;
   top: 4137px;
   background: #1c1a19;
+  background-image: url('images/abtFrame1.png');
+  background-repeat: no-repeat;
+  background-size: 150px auto;
+  background-position: right bottom;
 }
 
-.AboutMe h1 {
+.AboutMe h2 {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 72px;
@@ -588,22 +591,25 @@ a,
   margin-top: -50px;
 }
 
-.AboutMe button {
-  background: #ff6b00;
-  padding: 12px;
-  color: #fff;
+.resumeBtn {
+  margin-top: 10px;
+  padding: 12px 12px;
+  gap: 10px;
+  margin-left: 24px;
+  background-color: #ff6b00;
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  margin-left: 24px;
-  margin-top: -50px;
-  outline: #ff6b00;
+  font-weight: 700;
+  color: white;
+  border: none;
+  position: absolute;
 }
 
-.AboutMe img {
-  margin: -100px 333.27px 0 215px;
-  padding-top: 3px;
+.resumeBtn:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
 }
 
 .abtSection {
