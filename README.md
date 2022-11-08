@@ -41,9 +41,9 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/Luchy-B)
 
 ## 🤝 Contributing
+GitHub: [@githubhandle](https://github.com/AnelisaDee)
 
 Contributions, issues, and feature requests are welcome!
-
 Feel free to check the [issues page](../../issues/).
 
 ## Show your support
