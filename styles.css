@@ -500,18 +500,10 @@
   margin-top: 0;
 }
 
-.tags li {
-  text-decoration: none;
-  color: #fff5e1;
-}
-
 .tags ul {
   margin-top: -10px;
   width: 236px;
   list-style-type: none;
-  /*display: flex;
-  flex-direction: row;
-  align-items: center;*/
   justify-content: space-between;
   padding: 1px 12px;
 }
@@ -520,7 +512,8 @@
   float: left;
   margin-left: 5px;
   font-family: 'Inter', sans-serif;
-  color: rgb(23, 167, 13);
+  text-decoration: none;
+  color: #fff5e1;
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
 }
@@ -672,8 +665,8 @@
   list-style-image: url('images/circle.png');
 }
 
-/*Form Styles*/
-form{
+/* Form Styles */
+form {
   height: 844px;
   width: 375px;
   top: 6038px;
@@ -684,26 +677,26 @@ form{
   position: absolute;
 }
 
-.contactForm h5{
-  font-family: 'Inter';
+.contactForm h5 {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   margin: 24px 30px;
 }
 
-.contactForm ul{
+.contactForm ul {
   list-style: none;
   margin-top: -21px;
-  padding: 12px 40px 0px 40px;
+  padding: 12px 40px 0 40px;
 }
 
-.contactForm input{
+.contactForm input {
   border-style: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -712,11 +705,11 @@ form{
   margin-left: 20px;
 }
 
-.contactForm textarea{
+.contactForm textarea {
   border-style: none;
-  color: #3C3A39;
-  background: #FBF8F7;
-  font-family: 'Inter';
+  color: #3c3a39;
+  background: #fbf8f7;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -726,43 +719,42 @@ form{
   width: 327px;
 }
 
-.contactForm button{
-  background: #FF6B00;
+.contactForm button {
+  background: #ff6b00;
   padding: 12px;
-  margin: 24px 120px 0px 100px;
+  margin: 24px 120px 0 100px;
   width: 131px;
   border: none;
-  color: #FFFFFF;
-  font-family: 'Inter';
+  color: #fff;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 }
 
-.contactForm button:hover{
+.contactForm button:hover {
   color: #f55800;
   background: #fff5e1;
   border: 1px solid #f55800;
 }
 
-.formNav{
+.formNav {
   height: 72px;
   width: 375px;
   top: 6886px;
   position: absolute;
 }
 
-.formNav h1{
+.formNav h1 {
   color: #f55800;
 }
 
-.formNav ul{
+.formNav ul {
   display: flex;
   justify-content: center;
 }
 
-.darkLine{
-  padding: 0px 0px 8px 135px;
- }
- 
+.darkLine {
+  padding: 0 0 8px 135px;
+}
