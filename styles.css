@@ -107,6 +107,17 @@
   font-family: 'Crete Round', sans-serif;
 }
 
+.mainHeader span {
+  transition: 0.5s;
+}
+
+.mainHeader:hover span:nth-child(1){
+  margin-right: 10px;
+}
+.mainHeader:hover span {
+  color: #fbf8f7;
+}
+
 .introHeader {
   height: 27px;
   width: 327px;
