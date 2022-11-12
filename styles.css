@@ -57,15 +57,16 @@
 
 /* properties for Main */
 .main {
-  width: 100%;
+  width: 100;
   top: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 30% 0 120px 1%;
+  align-items: ;
+  padding: 30% 0 120px 4%;
   gap: 12px;
   position: absolute;
   background: #1c1a19;
+  margin-left: 56px;
 }
 
 .mainHeader {
