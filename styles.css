@@ -112,6 +112,18 @@
   font-family: 'Crete Round', sans-serif;
 }
 
+.mainHeader span {
+  transition: 0.5s;
+}
+
+.mainHeader:hover span {
+  color: #fbf8f7;
+}
+
+.mainHeader:hover span:nth-child(1) {
+  margin-right: 10px;
+}
+
 .introHeader {
   height: 27px;
   width: 327px;
@@ -756,9 +768,6 @@ form {
   color: #f4f5f7;
 }
 
-
-
-
 /* Desktop Version */
 @media only screen and (max-width: 768px) {
   .divNav {
@@ -850,17 +859,6 @@ form {
   .sideimg {
     display: none;
   }
-
-  /* .bckimg {
-    background-image: url('images/bck1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 300px auto;
-    background-position: right bottom;
-    z-index: 1;
-    position: absolute;
-    display: flex;
-  } */
 
   /* Recent Works */
   .workSection {
