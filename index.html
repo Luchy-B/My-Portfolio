@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Blessing's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Crete Round' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -14,14 +14,19 @@
     <main class="main">
         <div class="divNav">   
             <nav class="headerNav">             
-                    <img class="toggleIcon" src="images/toggleIcon.png" alt="toggle">                                      
-                    <h3 class="logo">John Doe </h3> 
-                    <ul class="dskNav" >
-                        <li>Portfolio</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li><img src="images/Envelop.png" alt="Envelop"></li>
-                    </ul>                                       
+                    <img class="toggleIcon" onclick="mobileMenu()" src="images/toggleIcon.png" alt="toggle">                                      
+                    <h3 class="logo">Okpara Blessing </h3>
+                    <div id="show">
+                        <ul id="style"   >
+                            <div id="cross-icon">
+                                <img onclick="hide()" class="style-li" src="/images/close-Icon.png" alt="close-Icon">
+                              </div>
+                            <li onclick="hide()" class="style-li">Portfolio</li>
+                            <li onclick="hide()" class="style-li">About</li>
+                            <li onclick="hide()" class="style-li">Contact</li>
+                            <li id="messge"><img src="images/Envelop.png" alt="Envelop"></li>
+                        </ul>  
+                    </div>                                        
             </nav>     
         </div>
         
@@ -327,6 +332,19 @@
     </ul>
     <img class="darkLine" src="images/darkLine.png" alt="">
 </footer>
+<script>
+    let btn = document.querySelector('.toggleIcon');
+
+btn.addEventListener('click', mobileMenu);
+
+function mobileMenu() {
+document.getElementById("show").style.display = "block";
+}
+
+function hide() {
+document.getElementById("show").style.display = "none";
+}
+  </script>
 </body>
 </html>
 
