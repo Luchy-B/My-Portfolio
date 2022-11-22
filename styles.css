@@ -1,3 +1,15 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+} */
+
 .divNav {
   position: absolute;
   height: 92px;
@@ -53,8 +65,12 @@
   text-align: center;
   width: 77px;
   height: 2px;
+  transition: rotate 2s;
 }
 
+.logo:hover {
+  rotate: 1 -0.5 1 180deg;
+}
 /* properties for Main */
 .main {
   width: 100;
@@ -755,7 +771,41 @@ form {
   display: none;
 }
 
+.mobile-Menu{
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  color: #f4f5f7;
+  width: 100%;
+}
+
+.mobile-Menu li{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 50px 0px 5px 20px;
+  list-style: none;
+}
+
+.mobile-Menu hr{
+  height: 1px;
+  margin-left: -15px;
+  background: #3C3A39;
+  border-color: #3C3A39;
+  width: 375px;
+}
+
+.mobile-Menu{
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
+  /* .mobile-Menu{
+    display: none;
+  }
+   */
   .logo {
     padding-left: 50px;
   }
