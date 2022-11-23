@@ -11,22 +11,29 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>  
+    <section class="section">
     <main class="main">
         <div class="divNav">   
             <nav class="headerNav">             
-                    <img class="toggleIcon" onclick="mobileMenu()" src="images/toggleIcon.png" alt="toggle">                                      
+                    <img class="toggleIcon" src="images/toggleIcon.png" alt="toggle">                                      
                     <h3 class="logo">Okpara Blessing </h3>
                     <div id="show">
                         <ul id="style"   >
                             <div id="cross-icon">
                                 <img onclick="hide()" class="style-li" src="/images/close-Icon.png" alt="close-Icon">
                               </div>
-                            <li onclick="hide()" class="style-li">Portfolio</li>
-                            <li onclick="hide()" class="style-li">About</li>
-                            <li onclick="hide()" class="style-li">Contact</li>
+                            <li onclick="hide()" class="style-li"><a href="#portfolioPage">Portfolio</a></li>
+                            <li onclick="hide()" class="style-li"><a href="#aboutPage">About</a></li>
+                            <li onclick="hide()" class="style-li"><a href="#contactPage">Contact</a></li>
                             <li id="messge"><img src="images/Envelop.png" alt="Envelop"></li>
-                        </ul>  
-                    </div>                                        
+                        </ul>                          
+                  </div> 
+                    <ul class="dskNavList">
+                        <li class="liList"><a href="#portfolioPage">Portfolio</a></li>
+                        <li class="liList"><a href="#aboutPage">About</a></li>
+                        <li class="liList"><a href="#contactPage">Contact</a></li>
+                        <li class="liList"><img src="images/Envelop.png" alt="Envelop"></li>
+                    </ul>                                        
             </nav>     
         </div>
         
@@ -45,8 +52,9 @@
             </ul>
         </div> -->
 
-        <p class="mainHeader">Hey There. I'm Blessing</p>
-        <section>
+        
+        <section class="nameHead">
+            <p class="mainHeader">Hey There. I'm Blessing</p>
             <p class="introHeader">I'am a Software Developer</p>
             <p class="mainParagraph">I can help you build a product , feature or 
                 website Look through some of my work
@@ -69,7 +77,7 @@
     </div>
     
      <!--Second Branch: Recent Work and About me Page-->
-<section class="workSection">
+<section class="workSection" id="portfolioPage">
     <div class="dskWrk">
         <h2 class="workSecPara">My Recent Works</h2> 
         <img class="workSectionRec" src="images/rec2.png" alt="Rec2"> 
@@ -255,7 +263,7 @@
         </div>
 
     <!--About Me Section-->
-    <section class="abtSection">
+    <section class="abtSection" id="aboutPage">
         <section class="AboutMe">
             <h2>About me</h2>
             <p>Hello I'm a software developer! I can help 
@@ -300,7 +308,7 @@
     </section>    
 </section>
 <!--Form part of the Design-->
-<form action="https://formspree.io/f/mdojyaar" class="contactForm" method="post" >
+<form action="https://formspree.io/f/mdojyaar" class="contactForm" id="contactPage" method="post" >
     <h5>I'm always interested in hearing about new projects, 
         so if you'd like to chat please get in touch.</h5>
     <ul>
@@ -332,6 +340,8 @@
     </ul>
     <img class="darkLine" src="images/darkLine.png" alt="">
 </footer>
+
+</section>
 <script>
     let btn = document.querySelector('.toggleIcon');
 

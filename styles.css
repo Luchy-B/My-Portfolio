@@ -8,6 +8,9 @@ body {
   width: 100%;
 }
 
+.nameHead{
+  margin: 25px;
+}
 /* margin: 0px;
     box-sizing: border-box */
 
@@ -84,8 +87,12 @@ body {
   padding-bottom: 10px;
   font-size: 32px;
   color: rgb(255, 255, 255);
+  
 }
-
+.style-li a{
+  text-decoration: none;
+  color: #f4f5f7;
+}
 .logo {
   left: 12px;
   top: 2px;
@@ -101,7 +108,6 @@ body {
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-  width: 77px;
   height: 2px;
   transition: rotate 2s;
 }
@@ -111,7 +117,6 @@ body {
 }
 /* properties for Main */
 .main {
-  width: 100%;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -281,7 +286,7 @@ body {
 }
 
 .sideimg {
-  left: 195.1px;
+  left: 227.1px;
   top: 334px;
   position: relative;
 }
@@ -800,6 +805,92 @@ form {
   margin-left: 42%;
   position: absolute;
 }
+.windows{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;background-color: pink;
+}
+
+.windows section{
+  margin: 25px;
+}
+.windows nav{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 100%;
+}
+
+.windows h1{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+}
+
+.winLanguages ul{
+ display: flex;
+ flex-direction: row;
+ list-style: none;
+ gap: 10px;
+ padding: 0;
+}
+
+.winLanguages li{
+  border: 2px solid green;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.windows p{
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #344563;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer div{
+  width: 134px;
+  height: 48px;
+  background: #FF6B00;
+}
+
+.btnSee{
+  color: #f4f5f7;
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.sectionClass{
+  margin: 0px;
+  padding: 0%;
+  width: 100%;
+}
+.snapShoot img{
+  width: 100%;
+
+}
 
 .dskNav {
   display: none;
@@ -809,7 +900,10 @@ form {
   display: none;
 }
 
-.mobile-Menu {
+.dskNavList{
+  display: none;
+}
+/* .mobile-Menu {
   margin: 0;
   padding: 0;
   gap: 0;
@@ -837,13 +931,9 @@ form {
 
 .mobile-Menu {
   display: none;
-}
+} */
 
 @media screen and (min-width: 768px) {
-  /* .mobile-Menu{
-    display: none;
-  }
-   */
   .logo {
     padding-left: 50px;
   }
@@ -858,6 +948,19 @@ form {
     position: absolute;
   }
 
+  .dskNavList a{
+    
+    text-decoration: none;
+  }
+
+  .liList a{
+    color: #f4f5f7;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
   .headerNav {
     margin-top: -40px;
     width: 100%;
@@ -893,9 +996,9 @@ form {
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-    width: 48%;
+    width: 390px;
     padding-left: 140px;
-    margin-top: 53px;
+  
   }
 
   .introHeader {
@@ -917,7 +1020,8 @@ form {
 
   .workSection {
     width: 100%;
-    margin-top: 130px;
+    margin-top: 230px;
+    
   }
 
   .workSectionRec {
@@ -934,9 +1038,10 @@ form {
 
   .dskWrk {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: baseline;
     width: 100%;
+    margin-top: 150px;
   }
 
   .dskArt {
@@ -948,7 +1053,7 @@ form {
     height: 648px;
     position: relative;
     padding-left: 904px;
-    margin-top: -90px;
+    margin-top: 120px;
   }
 
   .wrkSecHeader {
@@ -1034,7 +1139,7 @@ form {
     align-items: baseline;
     padding-left: 64px;
     position: absolute;
-    margin-top: -2100px;
+    margin-top: -1500px;
   }
 
   .contactForm h5 {
@@ -1058,7 +1163,7 @@ form {
   }
 
   .formNav {
-    margin-top: -2500px;
+    margin-top: -1800px;
   }
 
   .Rectangle42 {
@@ -1072,6 +1177,8 @@ form {
     position: absolute;
   }
 
+
+ 
   /* Card One */
   .cardOne {
     box-sizing: border-box;
