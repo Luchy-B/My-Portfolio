@@ -8,11 +8,9 @@ body {
   width: 100%;
 }
 
-.nameHead{
+.nameHead {
   margin: 25px;
 }
-/* margin: 0px;
-    box-sizing: border-box */
 
 .divNav {
   position: absolute;
@@ -78,7 +76,7 @@ body {
 }
 
 #cross-icon {
-  padding: 78px 0px 0px 229px;
+  padding: 78px 0 0 229px;
 }
 
 .style-li {
@@ -87,12 +85,13 @@ body {
   padding-bottom: 10px;
   font-size: 32px;
   color: rgb(255, 255, 255);
-  
 }
-.style-li a{
+
+.style-li a {
   text-decoration: none;
   color: #f4f5f7;
 }
+
 .logo {
   left: 12px;
   top: 2px;
@@ -115,6 +114,7 @@ body {
 .logo:hover {
   rotate: 1 -0.5 1 180deg;
 }
+
 /* properties for Main */
 .main {
   top: 0;
@@ -124,6 +124,7 @@ body {
   gap: 12px;
   position: absolute;
   background: #1c1a19;
+
   /* margin-left: 56px; */
 }
 
@@ -805,41 +806,44 @@ form {
   margin-left: 42%;
   position: absolute;
 }
-.windows{
+
+.windows {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  width: 100%;background-color: pink;
+  width: 100%;
+  background-color: pink;
 }
 
-.windows section{
+.windows section {
   margin: 25px;
 }
-.windows nav{
+
+.windows nav {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   width: 100%;
 }
 
-.windows h1{
+.windows h1 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
-.winLanguages ul{
- display: flex;
- flex-direction: row;
- list-style: none;
- gap: 10px;
- padding: 0;
+.winLanguages ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
 }
 
-.winLanguages li{
+.winLanguages li {
   border: 2px solid green;
   padding: 12px;
   font-family: 'Poppins', sans-serif;
@@ -849,29 +853,29 @@ form {
   line-height: 16px;
 }
 
-.windows p{
+.windows p {
   width: 100%;
   font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.footer div{
+.footer div {
   width: 134px;
   height: 48px;
-  background: #FF6B00;
+  background: #ff6b00;
 }
 
-.btnSee{
+.btnSee {
   color: #f4f5f7;
   background-color: transparent;
   border: none;
@@ -882,14 +886,14 @@ color: #344563;
   line-height: 24px;
 }
 
-.sectionClass{
-  margin: 0px;
+.sectionClass {
+  margin: 0;
   padding: 0%;
   width: 100%;
 }
-.snapShoot img{
-  width: 100%;
 
+.snapShoot img {
+  width: 100%;
 }
 
 .dskNav {
@@ -900,38 +904,9 @@ color: #344563;
   display: none;
 }
 
-.dskNavList{
+.dskNavList {
   display: none;
 }
-/* .mobile-Menu {
-  margin: 0;
-  padding: 0;
-  gap: 0;
-  color: #f4f5f7;
-  width: 100%;
-}
-
-.mobile-Menu li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  padding: 50px 0px 5px 20px;
-  list-style: none;
-}
-
-.mobile-Menu hr {
-  height: 1px;
-  margin-left: -15px;
-  background: #3c3a39;
-  border-color: #3c3a39;
-  width: 375px;
-}
-
-.mobile-Menu {
-  display: none;
-} */
 
 @media screen and (min-width: 768px) {
   .logo {
@@ -948,19 +923,19 @@ color: #344563;
     position: absolute;
   }
 
-  .dskNavList a{
-    
+  .dskNavList a {
     text-decoration: none;
   }
 
-  .liList a{
+  .liList a {
     color: #f4f5f7;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
   }
+
   .headerNav {
     margin-top: -40px;
     width: 100%;
@@ -998,7 +973,6 @@ color: #344563;
     line-height: 82px;
     width: 390px;
     padding-left: 140px;
-  
   }
 
   .introHeader {
@@ -1021,7 +995,6 @@ color: #344563;
   .workSection {
     width: 100%;
     margin-top: 230px;
-    
   }
 
   .workSectionRec {
@@ -1177,8 +1150,6 @@ color: #344563;
     position: absolute;
   }
 
-
- 
   /* Card One */
   .cardOne {
     box-sizing: border-box;
