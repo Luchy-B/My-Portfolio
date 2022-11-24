@@ -1,14 +1,22 @@
-/* * {
-  box-sizing: border-box;
-} */
-
-/* body {
+body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 0;
-} */
+  width: 100%;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nameHead {
+  margin: 25px;
+}
 
 .divNav {
   position: absolute;
@@ -37,7 +45,6 @@
   left: 311px;
   top: 4px;
   border-radius: 8px;
-  padding: 8px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -48,6 +55,69 @@
   flex-grow: 0;
 }
 
+#show {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(60, 58, 57);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#style {
+  display: block;
+  text-align: left;
+  margin: 10px 40px 10px 0;
+  list-style-type: none;
+}
+
+#messge {
+  display: none;
+}
+
+#cross-icon {
+  display: flex;
+  justify-content: flex-end;
+  left: 15%;
+  right: 5%;
+  top: 5%;
+  bottom: 15%;
+}
+
+#cross-icon hr {
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  left: 50px;
+  right: 0;
+  bottom: 0;
+  background: #6f6c6b;
+}
+
+.style-li {
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 32px;
+  color: #fff5e1;
+  margin-top: 25px;
+}
+
+.style-li a {
+  text-decoration: none;
+  color: #fff5e1;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 .logo {
   left: 12px;
   top: 2px;
@@ -55,7 +125,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 12px;
+  padding: 0 12px;
   position: absolute;
   color: #fff;
   font-size: 18px;
@@ -63,7 +133,6 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-  width: 77px;
   height: 2px;
   transition: rotate 2s;
 }
@@ -71,17 +140,23 @@
 .logo:hover {
   rotate: 1 -0.5 1 180deg;
 }
+
 /* properties for Main */
 .main {
-  width: 100;
   top: 0;
   display: flex;
   flex-direction: column;
-  padding: 30% 0 120px 4%;
-  gap: 12px;
+  padding-top: 30%;
+  padding-bottom: 120px;
+  gap: 10px;
   position: absolute;
   background: #1c1a19;
-  margin-left: 56px;
+  margin: 0;
+  width: 100%;
+}
+
+.nameHeadDiv {
+  width: 100%;
 }
 
 .mainHeader {
@@ -236,15 +311,15 @@
 }
 
 .bckimg {
-  width: 406.89px;
+  width: 100%;
   height: 312.03px;
   left: 620.1px;
   top: 317px;
 }
 
 .sideimg {
-  left: 267.1px;
-  top: 300px;
+  left: 227.1px;
+  top: 334px;
   position: relative;
 }
 
@@ -467,7 +542,7 @@
   flex-direction: column;
   height: 386px;
   width: 327px;
-  margin-top: 12px;
+  margin-top: 40px;
   background: url('images/bckImg.png');
   background-repeat: no-repeat;
   background-size: 340px auto;
@@ -606,10 +681,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 24px;
+  padding-top: 120px;
   gap: 24px;
   height: 1241.5px;
-  width: 329px;
+  width: 100%;
   left: 23px;
   top: 4797px;
   border-radius: 0;
@@ -682,14 +757,12 @@ form {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-  margin: 24px 30px;
   width: 320px;
 }
 
 .contactForm ul {
   list-style: none;
-  margin-top: -21px;
-  padding: 12px 40px 0 40px;
+  padding: 0;
 }
 
 .contactForm input {
@@ -756,11 +829,101 @@ form {
 .formNav ul {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 .darkLine {
   margin-left: 42%;
   position: absolute;
+}
+
+.windows {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: pink;
+}
+
+.windows section {
+  margin: 25px;
+}
+
+.windows nav {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 100%;
+}
+
+.windows h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.winLanguages ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.winLanguages li {
+  border: 2px solid green;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.windows p {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer div {
+  width: 134px;
+  height: 48px;
+  background: #ff6b00;
+}
+
+.btnSee {
+  color: #f4f5f7;
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.sectionClass {
+  margin: 0;
+  padding: 0%;
+  width: 100%;
+}
+
+.snapShoot img {
+  width: 100%;
 }
 
 .dskNav {
@@ -771,41 +934,17 @@ form {
   display: none;
 }
 
-.mobile-Menu{
-  margin: 0;
-  padding: 0;
-  gap: 0;
-  color: #f4f5f7;
-  width: 100%;
-}
-
-.mobile-Menu li{
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  padding: 50px 0px 5px 20px;
-  list-style: none;
-}
-
-.mobile-Menu hr{
-  height: 1px;
-  margin-left: -15px;
-  background: #3C3A39;
-  border-color: #3C3A39;
-  width: 375px;
-}
-
-.mobile-Menu{
+.dskNavList {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  /* .mobile-Menu{
-    display: none;
+  .section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
-   */
+
   .logo {
     padding-left: 50px;
   }
@@ -818,6 +957,19 @@ form {
     height: 72px;
     width: 100%;
     position: absolute;
+  }
+
+  .dskNavList a {
+    text-decoration: none;
+  }
+
+  .liList a {
+    color: #f4f5f7;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .headerNav {
@@ -855,9 +1007,8 @@ form {
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-    width: 48%;
+    width: 390px;
     padding-left: 140px;
-    margin-top: 53px;
   }
 
   .introHeader {
@@ -879,7 +1030,7 @@ form {
 
   .workSection {
     width: 100%;
-    margin-top: 130px;
+    margin-top: 230px;
   }
 
   .workSectionRec {
@@ -896,9 +1047,10 @@ form {
 
   .dskWrk {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: baseline;
     width: 100%;
+    margin-top: 150px;
   }
 
   .dskArt {
@@ -910,7 +1062,7 @@ form {
     height: 648px;
     position: relative;
     padding-left: 904px;
-    margin-top: -90px;
+    margin-top: 120px;
   }
 
   .wrkSecHeader {
@@ -996,7 +1148,7 @@ form {
     align-items: baseline;
     padding-left: 64px;
     position: absolute;
-    margin-top: -2100px;
+    margin-top: -1500px;
   }
 
   .contactForm h5 {
@@ -1020,7 +1172,7 @@ form {
   }
 
   .formNav {
-    margin-top: -2500px;
+    margin-top: -1800px;
   }
 
   .Rectangle42 {
