@@ -9,8 +9,8 @@ body {
 }
 
 .section {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
@@ -94,10 +94,11 @@ body {
   position: absolute;
   height: 1px;
   left: 50px;
-  right: 0px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
   background: #6f6c6b;
 }
+
 .style-li {
   font-weight: 700;
   padding-top: 10px;
@@ -150,12 +151,14 @@ body {
   gap: 10px;
   position: absolute;
   background: #1c1a19;
-  margin: 0px;
+  margin: 0;
   width: 100%;
 }
+
 .nameHeadDiv {
   width: 100%;
 }
+
 .mainHeader {
   height: 124px;
   width: 327px;
@@ -760,8 +763,6 @@ form {
 .contactForm ul {
   list-style: none;
   padding: 0;
-  /* margin-top: -21px;
-  padding: 12px 40px 0 40px; */
 }
 
 .contactForm input {
@@ -939,8 +940,8 @@ form {
 
 @media screen and (min-width: 768px) {
   .section {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 100%;
   }
 
