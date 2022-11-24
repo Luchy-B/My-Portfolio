@@ -8,6 +8,12 @@ body {
   width: 100%;
 }
 
+.section{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
 .nameHead {
   margin: 25px;
 }
@@ -67,7 +73,7 @@ body {
 #style {
   display: block;
   text-align: left;
-  margin: 20px 28px;
+  margin: 10px 38px 10px 10px;
   list-style-type: none;
 }
 
@@ -76,20 +82,41 @@ body {
 }
 
 #cross-icon {
-  padding: 78px 0 0 229px;
+  display: flex;
+  justify-content: flex-end;
+left: 15%;
+right: 5%;
+top: 5%;
+bottom: 15%;
 }
 
+#cross-icon hr{
+width: 100%;
+position: absolute;
+height: 1px;
+left: 50px;
+right: 0px;
+bottom: 0px;
+background: #6F6C6B;
+}
 .style-li {
   font-weight: 700;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 32px;
-  color: rgb(255, 255, 255);
+  color: #FFF5E1;
+  margin-top: 25px;
 }
 
 .style-li a {
   text-decoration: none;
-  color: #f4f5f7;
+  color: #FFF5E1;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+ 
 }
 
 .logo {
@@ -124,10 +151,11 @@ body {
   gap: 12px;
   position: absolute;
   background: #1c1a19;
-
-  /* margin-left: 56px; */
+  margin: 0px;
 }
-
+.nameHeadDiv{
+  width: 100%;
+}
 .mainHeader {
   height: 124px;
   width: 327px;
@@ -909,6 +937,12 @@ form {
 }
 
 @media screen and (min-width: 768px) {
+  .section{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
   .logo {
     padding-left: 50px;
   }
