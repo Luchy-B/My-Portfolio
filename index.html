@@ -104,7 +104,8 @@
                     <li class="bootstrap">bootstrap</li>
                     <li class="ruby">Ruby</li>
                     </ul>
-                <button class="btnSeeProject">See Project</button>
+                    
+                <button class="btnSeeProject" onclick="window.open('pop.html','popUpWindow','height=600,width=343,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">See Project</button>
             </div>
         </article>
     
@@ -322,7 +323,7 @@
         </li>
         <img src="images/Contact-Rec.png" alt="Lines">
         <li>
-            <input type="email" name="user-Email" placeholder="Email address" required>
+            <input type="email" name="user-Email" placeholder="Email address" id='email' onclick='validate()'>
         </li>
         <img src="images/Contact-Rec.png" alt="Lines">
         <li>
