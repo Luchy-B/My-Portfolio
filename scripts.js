@@ -14,27 +14,15 @@ function hide() {
 btn.addEventListener('click', mobileMenu);
 closeX.addEventListener('click', hide);
 
-
-
-function validate(){
-  
-  let mail2 = document.getElementById("email").value;
-
-  let regx = /^([A-Za-z0-9_\-\.\'])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,6})$/;
-
-    if (!mail2.match(regx)) 
-      return false;
-    else 
-  return true;
-
-  // if(regx.mail2){
-  //   alert('You have provided a valid email')
-  //   return true;
-  // }else{
-  //   return false;
-  // }
-    
-}
-
- // /^([a-z0-9_\-\.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
-  // /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+const userEmail= document.querySelector('#email');
+const alertMsg = document.querySelector('.alert-Msg');
+const contactForm = document.querySelector('.contactForm');
+contactForm.addEventListener('submit', (event) => {
+  console.log('userEmail', userEmail)
+  const regex = /[A-Z]/;
+  const emailContent = userEmail.value;
+  if (regex.test(emailContent)) {
+    alertMsg.innerHTML = 'Your email address should be lower case';
+    event.preventDefault();
+  }
+});
