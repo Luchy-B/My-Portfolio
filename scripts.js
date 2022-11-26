@@ -13,3 +13,16 @@ function hide() {
 
 btn.addEventListener('click', mobileMenu);
 closeX.addEventListener('click', hide);
+
+// form Validation
+const userEmail = document.querySelector('#email');
+const alertMsg = document.querySelector('.alert-Msg');
+const contactForm = document.querySelector('.contactForm');
+contactForm.addEventListener('submit', (event) => {
+  const regex = /[A-Z]/;
+  const emailContent = userEmail.value;
+  if (regex.test(emailContent)) {
+    alertMsg.innerHTML = 'Your email address should be lower case';
+    event.preventDefault();
+  }
+});
