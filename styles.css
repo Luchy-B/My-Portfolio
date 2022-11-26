@@ -164,7 +164,6 @@ body {
   width: 327px;
   left: 24px;
   top: 120px;
-  border-radius: nullpx;
   text-align: left;
   font-style: normal;
   font-weight: 400;
@@ -184,7 +183,6 @@ body {
   width: 327px;
   left: 24px;
   top: 256px;
-  border-radius: nullpx;
   letter-spacing: 0;
   text-align: left;
   font-style: normal;
@@ -206,7 +204,6 @@ body {
   width: 327px;
   left: 24px;
   top: 295px;
-  border-radius: nullpx;
   letter-spacing: 0;
   text-align: left;
   font-style: normal;
@@ -342,7 +339,6 @@ body {
   width: 327px;
   left: 0;
   top: 0;
-  border-radius: nullpx;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -453,10 +449,11 @@ body {
   top: 207px;
   display: flex;
   flex-direction: row;
+
   /* align-items: center; */
   justify-content: flex-end;
   padding: 0;
-  margin: 0px;
+  margin: 0;
   gap: 12px;
   flex: none;
   order: 2;
@@ -866,7 +863,7 @@ form {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
- align-items: baseline;
+  align-items: baseline;
 }
 
 .windows h1 {
@@ -936,9 +933,9 @@ form {
   width: 100%;
 }
 
-.alert-Msg{
+.alert-Msg {
   color: red;
-    font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -1084,16 +1081,17 @@ form {
     width: 100%;
     height: 748px;
     position: relative;
+
     /* margin-top: 120px; */
   }
 
-  .dskImageCon{
+  .dskImageCon {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
   }
+
   .wrkSecHeader {
     flex: none;
     order: 0;
