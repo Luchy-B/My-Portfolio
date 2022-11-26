@@ -11,6 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     
 </head>
+
 <body>  
     <section class="section">
     <main class="main">
@@ -40,22 +41,6 @@
                     </ul>                                        
             </nav>     
         </div>
-        
-        <!-- mobile Menu -->
-        <!-- <div class="mobile-Menu">
-            <nav>
-                <img src="images/cancel-Icon.png" alt="Cancel">
-            </nav>
-            <ul>
-                <li>Portfolio</li> 
-                <hr>
-                <li>About</li>
-                <hr>
-                <li>Contact</li>
-                <hr>
-            </ul>
-        </div> -->
-
         
         <section class="nameHead">
             <div class="nameHeadDiv">
@@ -91,7 +76,7 @@
         <article class="dskArt">
             <div class="dskImageCon">
                 <img class="workSectionImg"src="images/Placeholder.png" alt="Section Image">
-                <h4 class="wrkSecHeader">Multi-Post Stories</h4>
+                <h4 class="wrkSecHeader" id="title">Multi-Post Stories</h4>
                 <p class="wrkSecPara">A daily selection of privately personalized 
                     reads; no accounts or sign-ups required. 
                     has been the industry's standard 
@@ -105,14 +90,14 @@
                     <li class="ruby">Ruby</li>
                     </ul>
                     
-                <button class="btnSeeProject" onclick="window.open('pop.html','popUpWindow','height=600,width=343,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">See Project</button>
+                <button class="btnSeeProject" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Project</button>
             </div>
         </article>
     
         <!--Section for the Card in mobile-->
-    <div class="cards">
+    <div class="cards" id="allSeeBtn">
         <div class="card">
-            <h4>Profesional Art Printing Data</h4>
+            <h4 id="title">Profesional Art Printing Data</h4>
             <p>A daily selection of privately personalized reads; 
                 no accounts or sign-ups required. has been the industry's standard</p>
             <div class="tags">
@@ -126,7 +111,7 @@
         </div>
 
         <div class="card">
-            <h4>Profesional Art Printing Data</h4>
+            <h4 id="title">Profesional Art Printing Data</h4>
             <p>A daily selection of privately personalized reads; 
                 no accounts or sign-ups required. has been the industry's standard</p>
             <div class="tags">
@@ -140,7 +125,7 @@
         </div>
 
         <div class="card">
-            <h4>Profesional Art Printing Data</h4>
+            <h4 id="title">Profesional Art Printing Data</h4>
             <p>A daily selection of privately personalized reads; 
                 no accounts or sign-ups required. has been the industry's standard</p>
             <div class="tags">
@@ -154,7 +139,7 @@
         </div>
 
         <div class="card">
-            <h4>Profesional Art Printing Data</h4>
+            <h4 id="title">Profesional Art Printing Data</h4>
             <p>A daily selection of privately personalized reads; 
                 no accounts or sign-ups required. has been the industry's standard</p>
             <div class="tags">
@@ -168,7 +153,7 @@
         </div>
 
         <div class="card">
-            <h4>Profesional Art Printing Data</h4>
+            <h4 id="title">Profesional Art Printing Data</h4>
             <p>A daily selection of privately personalized reads; 
                 no accounts or sign-ups required. has been the industry's standard</p>
             <div class="tags">
@@ -182,7 +167,7 @@
         </div>
 
         <div class="card">
-            <h4>Website Protfolio</h4>
+            <h4 id="title">Website Protfolio</h4>
             <p>A daily selection of privately personalized reads; 
                 no accounts or sign-ups required. has been the industry's standard</p>
             <div class="tags">
@@ -193,6 +178,7 @@
                 </ul>
             </div>
             <button class="btn-2">See Project</button>
+        </div>
         </div>
         <!--Section for the Card in Desktop-->
 
@@ -202,7 +188,7 @@
             </div>
     
             <div class="cardTwo">
-                <h4>Data Dashboard Healthcare</h4>
+                <h4 id="title">Data Dashboard Healthcare</h4>
                 <p>A daily selection of privately personalized reads; 
                  no accounts or sign-ups required. has been the industry's standard</p>
                 <div class="tagsTwo">
@@ -211,12 +197,11 @@
                         <li>bootstrap</li>
                         <li>Ruby</li>
                     </ul>
-                </div>
-                <button class="btn-Two">See Project</button>
+                </div>              
             </div>
     
             <div class="cardThree">
-                <h4>Website Protfolio</h4>
+                <h4 id="title">Website Protfolio</h4>
                 <p>A daily selection of privately personalized reads; 
                     no accounts or sign-ups required. has been the industry's standard</p>
                 <div class="tagsThree">
@@ -229,7 +214,7 @@
             </div>
     
             <div class="cardFour">
-                <h4>Profesional Art Printing Data More</h4>
+                <h4 id="title">Profesional Art Printing Data More</h4>
                 <p>A daily selection of privately personalized reads; 
                     no accounts or sign-ups required. has been the industry's standard</p>
                 <div class="tagsFour">
@@ -242,7 +227,7 @@
             </div>
     
             <div class="cardFive">
-                <h4>Data Dashboard Healthcare</h4>
+                <h4 id="title">Data Dashboard Healthcare</h4>
                 <p>A daily selection of privately personalized reads; 
                     no accounts or sign-ups required. has been the industry's standard</p>
                 <div class="tagsFive">
@@ -255,7 +240,7 @@
             </div>
     
             <div class="cardSix">
-                <h4>Website Protfolio</h4>
+                <h4 id="title">Website Protfolio</h4>
                 <p>A daily selection of privately personalized reads; 
                     no accounts or sign-ups required. has been the industry's standard</p>
                 <div class="tagsSix">
@@ -314,6 +299,7 @@
     </section>    
 </section>
 <!--Form part of the Design-->
+
 <form action="https://formspree.io/f/mdojyaar" class="contactForm" id="contactPage" method="post" >
     <h5>I'm always interested in hearing about new projects, 
         so if you'd like to chat please get in touch.</h5>
@@ -322,15 +308,16 @@
             <input type="text" name="user-Name" placeholder="Full name" maxlength="30" required>          
         </li>
         <img src="images/Contact-Rec.png" alt="Lines">
+        <p class="alert-Msg"></p>
         <li>
-            <input type="email" name="user-Email" placeholder="Email address" id='email' onclick='validate()'>
+            <input type="email" name="user-Email" placeholder="Email address" id='email' required>
         </li>
         <img src="images/Contact-Rec.png" alt="Lines">
         <li>
-            <textarea name="user_message" id="" cols="10" rows="10" placeholder="Enter text here" required maxlength="500" ></textarea>     
+            <textarea name="user_message" id="" cols="10" rows="10" placeholder="Enter text here" minlength="5" maxlength="500" required></textarea>     
         </li>
         <li>
-            <button type="submit">Get in touch</button>   
+            <button type="submit" class="submitBtn">Get in touch</button>   
         </li>
     </ul>
 </form>
@@ -348,6 +335,56 @@
 </footer>
 
 </section>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-sm modal-lg modal-xl">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Multi Post Stories</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="winLanguages">
+                <ul>
+                    <li>html</li>
+                    <li>Bootstrap</li>
+                    <li>Ruby on Rails</li>
+                </ul>
+            </div>
+            <div class="snapShoot" id="imgModal">
+                <img src="images/snapshootPortfolio.png" alt="Portfolio Image">
+            </div>
+            <p id="modalPara">Lorem Ipsum is simply dummy text of the printing 
+                and typesetting industry. Lorem Ipsum has been the 
+                industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and 
+                scrambled it to make a type specimen book. It has 
+                survived not only five centuries, but also the leap 
+                into electronic typesetting, remaining essent</p>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <div id="seeLive">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">See Live</button>               
+                <img src="images/seeLive.png" alt="See img">
+            </div>
+            <div id="seeSource">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">See Source</button>
+                <img src="images/gitHub3.png" alt="">
+            </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
 <script src="scripts.js"></script>
 
 </body>

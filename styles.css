@@ -434,29 +434,16 @@ body {
 }
 
 .language {
-  /* height: 40px;
+  height: 40px;
   width: 236px;
   left: 0;
   top: 207px;
   border-radius: 0;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
   padding: 0;
-  gap: 12px;
-  flex: none;
-  order: 2;
-  flex-grow: 0; */
-
-  width: 100%;
-  left: 0;
-  top: 207px;
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  justify-content: flex-end;
-  padding: 0;
-  margin: 0px;
   gap: 12px;
   flex: none;
   order: 2;
@@ -936,6 +923,14 @@ form {
   width: 100%;
 }
 
+.alert-Msg{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: red;
+}
+
 .snapShoot img {
   width: 100%;
 }
@@ -1070,12 +1065,12 @@ form {
   .dskArt {
     background-image: url('images/Placeholder.png');
     background-repeat: no-repeat;
-    background-size: 44%;
-    background-position: top left 97px;
+    background-size: 50%;
+    background-position: top left 157px;
     width: 100%;
-    height: 748px;
+    height: 648px;
     position: relative;
-    /* margin-top: 120px; */
+   
   }
 
   .dskImageCon{
@@ -1083,7 +1078,6 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
   }
   .wrkSecHeader {
     flex: none;
@@ -1106,11 +1100,11 @@ form {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 100%;
-    margin-top: -270px;
+    
     position: relative;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    padding: 24px 24px;
+    margin: 30px 0px 0px 35px;
   }
 
   .abtSection {
@@ -1166,7 +1160,7 @@ form {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    padding-left: 64px;
+    justify-content: space-around;
     position: absolute;
     margin-top: -1500px;
   }
