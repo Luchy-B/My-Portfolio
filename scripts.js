@@ -31,7 +31,7 @@ contactForm.addEventListener('submit', (event) => {
 
 // Modal
 const closeNav = document.getElementById('cross-icon');
-// const body = document.getElementById('body');
+const body = document.getElementById('body');
 const cardBtn = document.getElementById('allSeeBtn');
 const modal = document.getElementById('myModal');
 const title = document.getElementById('modal-title');
@@ -109,50 +109,28 @@ const cards = [
    },
 ];
 
-function openMobileMenu() {
-  closeNav.style.display = 'block';
-}
-
-function closeMobileMenu() {
-  closeNav.style.display = 'none';
-}
-
-openMobileMenu();
-closeMobileMenu();
-
 // eslint-disable-next-line no-return-assign
 cards.map((card, index) => cardBtn.innerHTML += `<div class="card  rev-${index}">
-        <div class="img-container">
-          <img src="${card.image}" alt="Tonic" />
-        </div>
-        <div class="content">
-          <div class="project_name">
-            <h3 id="title">${card.pTitle}</h3>
-          </div>
-          <div class="project_info">
-            ${card.roles.map((role, idx) => `<div class="company">
-              <p>${role}</p>
-            </div><img class="dot-${idx}" src="images/dot.png" alt="dot" />`).join('')}
-            
-          </div>
-          <div class="description">
+            <h4 id="title">${card.pTitle}</h4>
             <p>
              ${card.shortDes}
             </p>
-          </div>
+          <div class="tags">
           <ul class="languages">
-          ${card.languages.map((lang) => `<li class="langu">${lang}</li>`).join('')}
+          ${card.languages.map((lang) => `<li>${lang}</li>`).join('')}
           </ul>
-          <div class="button-container">
-            <a href="javascript:openModal(${index})" class="btn">See Project</a>
           </div>
-        </div>
+          <button class="btn-2">
+            <a href="javascript:openModal(${index})" class="btn">See Project</a>
+          </button>
       </div>
       `);
 
+console.log("cards", cards[0]);
+
 const openModal = (index) => {
   title.innerHTML = cards[index].pTitle;
-  image.src = cards[index].image;
+  image.src = cards[index].modalImage;
   modeP.innerHTML = cards[index].modeP;
   seeLive.href = cards[index].seeLive;
   seeSource.href = cards[index].seeSource;
