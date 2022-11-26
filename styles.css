@@ -936,6 +936,15 @@ form {
   width: 100%;
 }
 
+.alert-Msg{
+  color: red;
+    font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .snapShoot img {
   width: 100%;
 }
